@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+<h2>The Bill Form</h2>
+<p>Fill in the form and click the button to get the results</p>
+<form action="\result" method="post">
+    {{billform.amount.label}} {{billform.amount}}
+    <br>
+    {{billform.period.label}} {{billform.period}}
+    <hr>
+    <p>Room Mate-1</p>
+    {{billform.roommate1.label}} {{billform.roommate1}}
+    <br>
+    {{billform.days1.label}} {{billform.days1}}
+    <hr>
+    <p>Room Mate-2</p>
+    {{billform.roommate2.label}} {{billform.roommate2}}
+    <br>
+    {{billform.days2.label}} {{billform.days2}}
+    <br><br><br>
+    {{billform.button}}
+</form>
+</body>
+</html>
